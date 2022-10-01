@@ -1,0 +1,12 @@
+
+* About
+This site runs a bunch of nmap commands for a given site. It can help you generate reconnaisance analysis for a site easily.
+The details of each nmap script are commented beside the script.
+* Installation
+To install it, execute the following commands.
+#+begin_src bash
+  git clone https://github.com/abj-paul/Automate-Stuffs.git
+  cd Automate-Stuffs
+  sudo chmod u+x automate.sh
+  ./automate.sh examplesite.com
+#+end_src
