@@ -13,3 +13,33 @@ To install it, execute the following commands.
   sudo chmod u+x automate.sh
   ./automate.sh examplesite.com
 #+end_src
+** Output
+All analysis are stored in their separate files. Hopefully the names of the files help you recognize them. If you have some confusion as to what content a file have, you can view the command at the top of the file or you can just go to the script code. Each code is explained there.
+#+begin_src text
+├── automate.sh
+└── eprocure.gov.bd
+    ├── eprocure.gov.bd.all.txt
+    ├── eprocure.gov.bd.domain.txt
+    ├── eprocure.gov.bd.ids_all.txt
+    ├── eprocure.gov.bd.mixed_port_scan.txt
+    ├── eprocure.gov.bd.port_scan.txt
+    ├── eprocure.gov.bd.random_servers.txt
+    ├── eprocure.gov.bd.range_port_scan.txt
+    ├── eprocure.gov.bd.scan_ack_port.txt
+    ├── eprocure.gov.bd.scan_list_targets.txt
+    ├── eprocure.gov.bd.scan_syn_port.txt
+    ├── eprocure.gov.bd.scan_tcp_port.txt
+    ├── eprocure.gov.bd.scan_udp_port.txt
+    ├── eprocure.gov.bd.script_crossite.txt
+    ├── eprocure.gov.bd.script_default.txt
+    ├── eprocure.gov.bd.script_open_ports.txt
+    ├── eprocure.gov.bd.script_sitemap.txt
+    ├── eprocure.gov.bd.service_intensity.txt
+    ├── eprocure.gov.bd.service.txt
+    ├── eprocure.gov.bd.sitemap.txt
+    ├── eprocure.gov.bd.target_specification.txt
+    ├── eprocure.gov.bd.tcp_list_targets.txt
+    └── eprocure.gov.bd.udp_list_targets.txt
+
+1 directory, 24 files
+#+end_src
