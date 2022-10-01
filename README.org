@@ -17,29 +17,29 @@ To install it, execute the following commands.
 All analysis are stored in their separate files. Hopefully the names of the files help you recognize them. If you have some confusion as to what content a file have, you can view the command at the top of the file or you can just go to the script code. Each code is explained there.
 #+begin_src text
 ├── automate.sh
-└── eprocure.gov.bd
-    ├── eprocure.gov.bd.all.txt
-    ├── eprocure.gov.bd.domain.txt
-    ├── eprocure.gov.bd.ids_all.txt
-    ├── eprocure.gov.bd.mixed_port_scan.txt
-    ├── eprocure.gov.bd.port_scan.txt
-    ├── eprocure.gov.bd.random_servers.txt
-    ├── eprocure.gov.bd.range_port_scan.txt
-    ├── eprocure.gov.bd.scan_ack_port.txt
-    ├── eprocure.gov.bd.scan_list_targets.txt
-    ├── eprocure.gov.bd.scan_syn_port.txt
-    ├── eprocure.gov.bd.scan_tcp_port.txt
-    ├── eprocure.gov.bd.scan_udp_port.txt
-    ├── eprocure.gov.bd.script_crossite.txt
-    ├── eprocure.gov.bd.script_default.txt
-    ├── eprocure.gov.bd.script_open_ports.txt
-    ├── eprocure.gov.bd.script_sitemap.txt
-    ├── eprocure.gov.bd.service_intensity.txt
-    ├── eprocure.gov.bd.service.txt
-    ├── eprocure.gov.bd.sitemap.txt
-    ├── eprocure.gov.bd.target_specification.txt
-    ├── eprocure.gov.bd.tcp_list_targets.txt
-    └── eprocure.gov.bd.udp_list_targets.txt
+└── examplesite.org
+    ├── examplesite.org.all.txt
+    ├── examplesite.org.domain.txt
+    ├── examplesite.org.ids_all.txt
+    ├── examplesite.org.mixed_port_scan.txt
+    ├── examplesite.org.port_scan.txt
+    ├── examplesite.org.random_servers.txt
+    ├── examplesite.org.range_port_scan.txt
+    ├── examplesite.org.scan_ack_port.txt
+    ├── examplesite.org.scan_list_targets.txt
+    ├── examplesite.org.scan_syn_port.txt
+    ├── examplesite.org.scan_tcp_port.txt
+    ├── examplesite.org.scan_udp_port.txt
+    ├── examplesite.org.script_crossite.txt
+    ├── examplesite.org.script_default.txt
+    ├── examplesite.org.script_open_ports.txt
+    ├── examplesite.org.script_sitemap.txt
+    ├── examplesite.org.service_intensity.txt
+    ├── examplesite.org.service.txt
+    ├── examplesite.org.sitemap.txt
+    ├── examplesite.org.target_specification.txt
+    ├── examplesite.org.tcp_list_targets.txt
+    └── examplesite.org.udp_list_targets.txt
 
 1 directory, 24 files
 #+end_src
