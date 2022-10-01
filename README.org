@@ -2,10 +2,12 @@
 * About
 A lot of automation tasks are needed in our day to day life. I will share them here to help others who might need them. Lets grow together.
 Feel free to push your automation scripts here. I would love contributions. For any query, feel free to raise an issue.
-* Automate NMAP analysis
+* Automations
+The following automations were done so far.
+** Automate NMAP analysis
 This site runs a bunch of nmap commands for a given site. It can help you generate reconnaisance analysis for a site easily.
 The details of each nmap script are commented beside the script.
-** Installation
+*** Installation
 To install it, execute the following commands.
 #+begin_src bash
   git clone https://github.com/abj-paul/Automate-Stuffs
@@ -13,7 +15,7 @@ To install it, execute the following commands.
   sudo chmod u+x automate.sh
   ./automate.sh examplesite.com
 #+end_src
-** Output
+*** Output
 All analysis are stored in their separate files. Hopefully the names of the files help you recognize them. If you have some confusion as to what content a file have, you can view the command at the top of the file or you can just go to the script code. Each code is explained there.
 #+begin_src text
 ├── automate.sh
