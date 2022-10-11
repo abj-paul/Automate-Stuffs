@@ -12,8 +12,8 @@ To install it, execute the following commands.
 #+begin_src bash
   git clone https://github.com/abj-paul/Automate-Stuffs
   cd Automate-Stuffs
-  sudo chmod u+x automate.sh
-  ./automate.sh examplesite.com
+  sudo chmod u+x nmap-report-generator.sh
+  ./nmap-report-generator.sh examplesite.com
 #+end_src
 *** Output
 All analysis are stored in their separate files. Hopefully the names of the files help you recognize them. If you have some confusion as to what content a file have, you can view the command at the top of the file or you can just go to the script code. Each code is explained there.
@@ -44,4 +44,41 @@ All analysis are stored in their separate files. Hopefully the names of the file
     └── examplesite.org.udp_list_targets.txt
 
 1 directory, 24 files
+#+end_src
+** Convert Pdf To Image List
+In many occassions, we need to convert a pdf to image list. Taking screenshot reduces the quality of the image. So this automation script was developed(I intensively used it when doing SRS. Because our 100+ diagrams were made in slide, taking SS of each of them and inserting them in the main doc was inefficient. So we converted slide to pdf and then, used this script to get all diagrams from the pdf.)
+*** Installation
+Do change the fileprefix and pdf file name in the code according to your need. 
+
+To install it, execute the following commands.
+#+begin_src bash
+  git clone https://github.com/abj-paul/Automate-Stuffs
+  cd Automate-Stuffs
+  python3 convert-pdf-to-img.py
+#+end_src
+*** Output
+As we can see, it converted our CRC diagram pdf file, crc.pdf into list of images.
+#+begin_src text
+├── crc_card_0.jpg
+├── crc_card_10.jpg
+├── crc_card_11.jpg
+├── crc_card_12.jpg
+├── crc_card_13.jpg
+├── crc_card_14.jpg
+├── crc_card_15.jpg
+├── crc_card_16.jpg
+├── crc_card_1.jpg
+├── crc_card_2.jpg
+├── crc_card_3.jpg
+├── crc_card_4.jpg
+├── crc_card_5.jpg
+├── crc_card_6.jpg
+├── crc_card_7.jpg
+├── crc_card_8.jpg
+├── crc_card_9.jpg
+├── crc.pdf
+└── script.py
+
+0 directories, 19 files
+
 #+end_src
