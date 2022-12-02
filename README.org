@@ -1,12 +1,21 @@
+:PROPERTIES:
+:TOC:      :include all
+:END:
 #+options: \n:t
 #+options: toc:nil
 #+begin_export latex
   \clearpage \tableofcontents \clearpage
 #+end_export
 
-#+title: a simple org-mode file
-#+date: <2018-10-07 sun>
+#+title: Automate & Chill!
+#+date: <2021-10-07 sun>
 #+author: Abhijit Paul
+
+:CONTENTS:
+- [[#About][About Section]]
+  - [[#subheading][Subheading]]
+:END:
+
 
 * About
 A lot of automation tasks are needed in our day to day life. I will share them here to help others who might need them. Lets grow together.
