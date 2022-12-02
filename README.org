@@ -1,3 +1,12 @@
+#+options: \n:t
+#+options: toc:nil
+#+begin_export latex
+  \clearpage \tableofcontents \clearpage
+#+end_export
+
+#+title: a simple org-mode file
+#+date: <2018-10-07 sun>
+#+author: Abhijit Paul
 
 * About
 A lot of automation tasks are needed in our day to day life. I will share them here to help others who might need them. Lets grow together.
@@ -82,3 +91,34 @@ As we can see, it converted our CRC diagram pdf file, crc.pdf into list of image
 0 directories, 19 files
 
 #+end_src
+** Process imageNet Dataset
+~keras.utils.image_dataset_from_dir()~ requires all images to be in a directory one step below it. For example,
+#+begin_src text
+  - imageNet
+	- Category1
+	           - img_1.jpg
+	           - img_2.jpg
+	           - img_3.jpg
+	           - img_4.jpg
+	           - img_5.jpg
+	           - img_6.jpg
+#+end_src
+
+But in [[https://image-net.org/download-images.php][imageNet dataset]], the images are in the following format. 
+
+#+begin_src text
+  - imageNet
+	- Category1
+	     - images
+		   - img_1.jpg
+		   - img_2.jpg
+		   - img_3.jpg
+		   - img_4.jpg
+		   - img_5.jpg
+		   - img_6.jpg
+#+end_src
+
+So We need move all images from ~/category*/images/~ directory to ~/Category*/~  
+
+*** Issues
+If you are facing issues, just browse through the script and change the directory names. Also, let me know of the issue so that I can reflect changes to fix that.
