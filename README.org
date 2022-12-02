@@ -118,7 +118,10 @@ But in [[https://image-net.org/download-images.php][imageNet dataset]], the imag
 		   - img_6.jpg
 #+end_src
 
-So We need move all images from ~/category*/images/~ directory to ~/Category*/~  
-
+So We need move all images from ~/category*/images/~ directory to ~/Category*/~. The scrip simply does that. The algorithm is:
+1. List all directory.
+2. Go to directory.
+3. List all images.
+4. Move them to the desired folder.
 *** Issues
 If you are facing issues, just browse through the script and change the directory names. Also, let me know of the issue so that I can reflect changes to fix that.
