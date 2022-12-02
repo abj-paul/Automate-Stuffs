@@ -11,11 +11,12 @@
 #+date: <2021-10-07 sun>
 #+author: Abhijit Paul
 
+Feel free to raise issues if you encounter issues or require customization. I would love to help with any automation tasks.
 :CONTENTS:
-- [[#About][About Section]]
-  - [[#subheading][Subheading]]
+- [[#Automate NMAP analysis][Automate NMAP analysis]]
+- [[#Convert Pdf To Image List][Convert Pdf To Image List]]
+- [[#Process imageNet Dataset][Process imageNet Dataset]]
 :END:
-
 
 * About
 A lot of automation tasks are needed in our day to day life. I will share them here to help others who might need them. Lets grow together.
@@ -134,3 +135,4 @@ So We need move all images from ~/category*/images/~ directory to ~/Category*/~.
 4. Move them to the desired folder.
 *** Issues
 If you are facing issues, just browse through the script and change the directory names. Also, let me know of the issue so that I can reflect changes to fix that.
+:
