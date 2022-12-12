@@ -13,6 +13,7 @@
 
 Feel free to raise issues if you encounter issues or require customization. I would love to help with any automation tasks.
 :CONTENTS:
+- [[#Auto-Sync Github][Process imageNet Dataset]]
 - [[#Automate NMAP analysis][Automate NMAP analysis]]
 - [[#Convert Pdf To Image List][Convert Pdf To Image List]]
 - [[#Process imageNet Dataset][Process imageNet Dataset]]
