@@ -5,19 +5,24 @@ Follow the link and install it. Do remember that you must clone the github and n
 So install it.
 https://askubuntu.com/questions/753748/can-anyone-tell-me-step-by-step-way-to-install-logkeys-keylogger-in-ubuntu-14-04
 
-
 * Running it
 After installation is done, you may run it. 
 
+#+begin_src bash
 sudo logkeys --start --output .my_logger.log
+#+end_src
 
 You can view the logged activity using:
 
+#+begin_src bash
 sudo tail .my_logger.log
+#+end_src
 
 You can kill the logger using:
 
+#+begin_src bash
 sudo logkeys -k
+#+end_src
 
 * Keymap
 
@@ -28,11 +33,16 @@ The reason is, the keylogger must work for all types of keyboard architecture ar
 First, logkeys github provide a list of keymaps for famous keyboard layouts. You may go through the files and see if it matches youtd.
 https://github.com/kernc/logkeys/tree/master/keymaps
 
-For example, mine matched with en_US_ubuntu.map so I copied its contents and pasted it into a temp.map file. Now i will run the following command.
+For example, mine matched with ~en_US_ubuntu.map~ so I copied its contents and pasted it into a temp.map file. Now i will run the following command.
 
+#+begin_src bash
 sudo logkeys --start --keymap=temp.map --output .my_logger.log
+#+end_src
 
 Voila! It will work perfectly fine now. If you view the log file, you will see that the output is very sane now.
+
+#+begin_src bash
 sudo cat .my_logger.log
+#+end_src
 
 Thats about everything.
