@@ -13,7 +13,7 @@
 
 Feel free to raise issues if you encounter issues or require customization. I would love to help with any automation tasks.
 :CONTENTS:
-- [[#Auto-Sync Github][Process imageNet Dataset]]
+- [[#Auto-Sync Github][Auto-Sync Github]]
 - [[#Automate NMAP analysis][Automate NMAP analysis]]
 - [[#Convert Pdf To Image List][Convert Pdf To Image List]]
 - [[#Process imageNet Dataset][Process imageNet Dataset]]
@@ -28,17 +28,6 @@ The following automations were done so far.
 As we often forget to push-pull our git commits, conflict occurs, problem occurs. So it is a good idea to automatically commit them. Our script shows an example on how you can do it yourself.
 
 *** Automatically run the script when shutting down the linux
-Let’s now consider a solution that takes advantage of the /etc/rc.d/rc.local file. Since this file already runs at startup, we can append a line that invokes our script:
-#+begin_src text
-sh /home/ec2-user/reboot_message.sh
-#+end_src
-
-For this to work, though, we need to ensure that the rc.local file itself is executable:
-#+begin_src bash
-$ chmod +x /etc/rc.d/rc.local
-#+end_src
-
-[[https://www.baeldung.com/linux/run-script-on-startup][Information Source]]
 If you want to automatically run the script just before shutting down the pc, add it in the ~/etc/rc0.d~ directory. For example,
 #+begin_src text
 /etc/rc0.d/sync_my_git.sh
