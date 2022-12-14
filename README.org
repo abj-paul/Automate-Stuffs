@@ -13,6 +13,8 @@
 
 Feel free to raise issues if you encounter issues or require customization. I would love to help with any automation tasks.
 :CONTENTS:
+
+- [[#Collect datasets from google][Collect datasets from google]]
 - [[#Auto-Sync Github][Auto-Sync Github]]
 - [[#Automate NMAP analysis][Automate NMAP analysis]]
 - [[#Convert Pdf To Image List][Convert Pdf To Image List]]
