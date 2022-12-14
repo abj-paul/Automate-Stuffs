@@ -24,6 +24,30 @@ A lot of automation tasks are needed in our day to day life. I will share them h
 Feel free to push your automation scripts here. I would love contributions. For any query, feel free to raise an issue.
 * Automations
 The following automations were done so far.
+** Collect datasets from google
+First, you need to install some packages as we will be using library to do the whole thing.
+*** Download chromedriver
+[[https://chromedriver.storage.googleapis.com/index.html?path=108.0.5359.71/][Download chromedriver from this site]] and unzip it.
+#+begin_src bash
+wget https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_linux64.zip # Download the latest chromedrive from the site if you want
+unzip chromedriver_linux64.zip
+ls -alh
+#+end_src
+No need to install it. We will use these code in our google-image-download package.
+*** Install google-image-downdload
+#+begin_src bash
+pip install google_images_download
+#+end_src
+*** Download the dataset
+Now that we are done downloading the packages, it is time to download the images! Note that, the following is a bash command.
+#+begin_src bash
+googleimagesdownload --keywords 'cloth stack' \
+--limit 200 \
+--size medium \
+--chromedriver ./chromedriver \
+--format jpg
+#+end_src
+Here, we are downloading images for "cloth stack".
 ** Auto-Sync Github
 As we often forget to push-pull our git commits, conflict occurs, problem occurs. So it is a good idea to automatically commit them. Our script shows an example on how you can do it yourself.
 
