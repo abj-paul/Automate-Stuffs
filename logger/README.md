@@ -35,8 +35,7 @@ You can adjust how frequently the script checks the task and sends notifications
 You can replace the default metric extraction with your own command. If you want to send the last 3 lines of the log instead of filtering for `eval/acc1`, wrap your bash pipeline in quotes:
 
 ```bash
-./monitor_tsp.sh -t my_secret_topic_99 -i 2 -s 600 -c "tsp -c 2 | tail -n 3"
-
+./monitor_tsp.sh -t my_secret_topic_99 -i 2 -s 6 -c 'tail -n 3 $(tsp -o 2)'
 ```
 
 **4. Running in the Background**
