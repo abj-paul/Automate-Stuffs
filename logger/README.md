@@ -53,8 +53,7 @@ For a PID (e.g., reading the tail of a `nohup` output file):
 For a TSP task (e.g., filtering specifically for an accuracy metric):
 
 ```bash
-./monitor_job.sh -t my_secret_topic_99 -i 2 -s 6 -c 'tsp -c 2 | grep "eval/acc1" | tail -n 1'
-
+./monitor_job.sh -t my_secret_topic_99 -i 5 -s 3600 -c "tail -n 2 $(tsp -o 5)"
 ```
 
 **4. Running in the Background**
